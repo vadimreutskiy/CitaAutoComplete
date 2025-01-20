@@ -13,11 +13,11 @@
     'use strict';
 
     // Configuration
-    const fullName = "John Smith";
-    const documentID = "000000000";
-    const documentDate = "01/01/2020";
-    const phoneNumber = "000000000";
-    const eMail = "none@none.com";
+    const fullName = "John Smith"; // Enter your name as on the document you going to use (Passport/TIE)
+    const documentID = "000000000"; // Enter document ID
+    const documentDate = "01/01/2020"; // Enter passport valid-until date (leave as is for TIE)
+    const phoneNumber = "000000000"; // Enter your phone number
+    const eMail = "none@none.com"; // Enter your email address
     const countryCode = "149"; // Rusia
     const proceduralAction = "4010"; // POLICIA-TOMA DE HUELLAS (EXPEDICIÓN DE TARJETA) Y RENOVACIÓN DE TARJETA DE LARGA DURACIÓN
     const provinciaFormURL = "/icpplustieb/citar?p=8&locale=es"; // Barcelona
