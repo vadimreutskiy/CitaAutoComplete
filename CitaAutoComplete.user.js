@@ -20,8 +20,8 @@
     const eMail = "none@none.com";
     const countryCode = "149"; // Rusia
     const proceduralAction = "4010"; // POLICIA-TOMA DE HUELLAS (EXPEDICIÓN DE TARJETA) Y RENOVACIÓN DE TARJETA DE LARGA DURACIÓN
-    const provinciaFormURL = "/icpplustie/citar?p=8&locale=es"; // Barcelona
-    const isPassport = true; // if "true" - using passport, instead of NIE
+    const provinciaFormURL = "/icpplustieb/citar?p=8&locale=es"; // Barcelona
+    const isPassport = false; // if "true" - using passport, instead of NIE
     const isDate = false; // if "true" - fill date field. It's possible to fill the date field with an empty value, but it's safer not to touch anything that is not required.
 
     // Constants
@@ -37,7 +37,8 @@
                        '/icpplustie/acOpcDirect',
                        '/icpplustie/index.html',
                        '/icpplustie/index',
-                       '/icpplustie/']; // There are a lot of ways to get to the front page, so I'm listing everything I've got.
+                       '/icpplustie/',
+                       'icpplus/index.html']; // There are a lot of ways to get to the front page, so I'm listing everything I've got.
 
     // Field value setting function. Check for element existance
     function setFieldValue(f, v) {
@@ -78,7 +79,7 @@
 
     // Select procedure (second page)
     if (page == 'citar') {
-        setFieldValue('tramiteGrupo[1]', proceduralAction);
+        setFieldValue('tramiteGrupo[0]', proceduralAction);
         /* // more accurate, but have disadvantages
         var formProcedure = document.getElementById('tramiteGrupo[1]');
         if (formProcedure) {
